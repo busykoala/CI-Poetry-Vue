@@ -1,5 +1,8 @@
 FROM centos:latest
 
+ENV CHROME_PATH=/usr/bin/chromium-browser
+ENV PATH="/root/.poetry/bin:$PATH"
+
 # update system and add epel
 RUN yum update -y
 RUN yum install -y epel-release
